@@ -1,0 +1,134 @@
+:root {
+    --second-bgcolor: rgb(64, 64, 64);
+    --second-txtcolor: rgb(191 ,191, 191);
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Jost";
+    font-size: 25;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+button {
+    all: unset;
+}
+button:focus {
+    outline: revert;
+}
+h1 {
+    font-size: 30;
+}
+li {
+    list-style: none;
+}
+/* title page */
+#title-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#title-container > p:first-of-type {
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: bold;
+}
+#title-container > p:last-of-type {
+    font-size: 40px;
+    line-height: 60px;
+}
+#title-main-button {
+    font-style: italic;
+    font-size: 40px;
+    border: 3px solid black;    
+    padding: 15px 60px 15px 60px;
+    margin-top: 60px;
+    transition: color 500ms;
+    position: relative;
+}
+#title-main-button:hover {
+    color: var(--second-txtcolor);
+    border-color: var(--second-bgcolor);
+}
+#title-main-button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0;  left: 0; right: 100%;
+    background-color: var(--second-bgcolor);
+    color: var(--second-txtcolor);
+    z-index: -1;
+    animation: bg-slide-left 500ms forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* main page */
+nav {
+    background-color: white;
+    box-shadow: 0 0 0px 0.5px var(--second-bgcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+nav > * > img { 
+    max-width: 25px;
+    max-height: 25px;
+    margin-top: 5px;
+}
+nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav > ul > li {
+    width: 20%;
+    text-align: center;
+}
+.section-anchor {
+    display: block;
+    padding: 18.5px 0;
+    transition: 0.5s;
+}
+.section-anchor:hover,
+.section-anchor:focus {
+    color: var(--second-txtcolor, black);
+    background-color: var(--second-bgcolor, white);
+}
+.container {
+    margin: 0 100px;
+}
+section#about-me {
+    text-align: center;
+    padding: 50px 0;
+}
+section#skills {
+    background-color: var(--second-bgcolor);
+    color: var(--second-txtcolor);
+}
+.child-container {
+    display: flex;
+    align-items: center;
+}
+.child-container > h1 {
+    writing-mode: vertical-lr;
+}
+#skills-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 0px 50px 25px;
+}
+/* keyframes */
+@keyframes bg-slide-left {
+    100% {
+        right: 0;
+    }
+}
