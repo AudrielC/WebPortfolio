@@ -3,8 +3,8 @@
     --second-txtcolor: rgb(191 ,191, 191);
 }
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: "Jost";
     font-size: 25;
 }
@@ -46,7 +46,7 @@ li {
     font-style: italic;
     font-size: 40px;
     border: 3px solid black;    
-    padding: 15px 60px 15px 60px;
+    padding: 15px 60px;
     margin-top: 60px;
     transition: color 500ms;
     position: relative;
@@ -70,7 +70,7 @@ li {
 /* main page */
 nav {
     background-color: white;
-    box-shadow: 0 0 0px 0.5px var(--second-bgcolor);
+    box-shadow: 0 0 0 0.5px var(--second-bgcolor);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +102,7 @@ nav > ul > li {
     background-color: var(--second-bgcolor, white);
 }
 .container {
-    margin: 0 100px;
+    margin: 0 200px;
 }
 section#about-me {
     text-align: center;
@@ -123,12 +123,65 @@ section#skills {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
-    padding: 50px 0px 50px 25px;
+    gap: 25px;
+    padding: 50px 0 50px 25px;
 }
 /* keyframes */
 @keyframes bg-slide-left {
     100% {
         right: 0;
+    }
+}
+/* media queries */
+@media screen and (max-width: 940px) {
+    #title-main-button {
+        margin-top: 25px;
+    }
+    #title-container > p:first-child {
+        font-size: 60px;
+    }
+    #skills-list {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .child-container > h1 {
+        font-size: 80px;
+        letter-spacing: 5rem;
+        padding-top: 5rem;
+    }
+    .container {
+        margin: 0 100px;
+    }
+}
+@media screen and (max-width: 596px) {
+    #title-container > p:nth-child(1) {
+        font-size: 40px;
+        line-height: 1.5em;
+    }
+    #title-container > p:nth-child(2) {
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+    #title-main-button {
+        font-size: 25px;
+        padding: 10px;
+    }
+    nav {
+        justify-content: flex-end;
+    }
+    nav > a:first-child {
+        display: none;
+    }
+    nav > ul {
+        display: none;
+    }
+    .container {
+        margin: 0 50px;
+    }
+}
+@media screen and (max-width: 396px) {
+    .container {
+        margin: 0 25px;
     }
 }
