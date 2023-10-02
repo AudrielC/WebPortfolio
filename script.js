@@ -1,8 +1,8 @@
 console.log("Welcome!");
 const vWidthHandle = function () {
-    let vWidth = window.innerWidth;
+    const vWidth = window.innerWidth;
     console.log("ViewportX:", vWidth);
-    let text = document.getElementById("title-main-button");
+    const text = document.getElementById("title-main-button");
     if (vWidth <= 340) {
         text.textContent = "Learn More!";
     } else {
