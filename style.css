@@ -130,7 +130,7 @@ section#projects {
     color: var(--second-bgcolor);
     text-align: center;
 }
-section#projects .container > h1 {
+section#projects > .container > h1 {
     padding-top: 25px;
 }
 #carousel {
