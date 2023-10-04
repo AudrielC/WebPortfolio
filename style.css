@@ -32,12 +32,12 @@ li {
     justify-content: center;
     text-align: center;
 }
-#title-container > p:first-of-type {
+#title-container p:first-of-type {
     font-size: 80px;
     line-height: 88px;
     font-weight: bold;
 }
-#title-container > p:last-of-type {
+#title-container p:last-of-type {
     font-size: 40px;
     line-height: 60px;
 }
@@ -76,17 +76,17 @@ nav {
     height: 60px;
     padding: 0 20px;
 }
-nav > * > img { 
+nav * img { 
     max-width: 25px;
     max-height: 25px;
     margin-top: 5px;
 }
-nav > ul {
+nav ul {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-nav > ul > li {
+nav ul li {
     width: 20%;
     text-align: center;
 }
@@ -115,7 +115,7 @@ section#skills {
     display: flex;
     align-items: center;
 }
-.child-container > h1 {
+.child-container h1 {
     writing-mode: vertical-lr;
 }
 #skills-list {
@@ -130,7 +130,7 @@ section#projects {
     color: var(--second-bgcolor);
     text-align: center;
 }
-section#projects > .container > h1 {
+section#projects .container h1 {
     padding-top: 25px;
 }
 #carousel {
@@ -149,10 +149,10 @@ section#projects > .container > h1 {
     align-items: center;
     justify-content: center;
 }
-#carousel-item-description > p:nth-child(1) {
+#carousel-item-description p:nth-child(1) {
     font-size: 20px;
 }
-#carousel-item-description > p:nth-child(2) {
+#carousel-item-description p:nth-child(2) {
     padding: 25px 0px;
 }
 /* keyframes */
@@ -166,7 +166,7 @@ section#projects > .container > h1 {
     #title-main-button {
         margin-top: 25px;
     }
-    #title-container > p:first-child {
+    #title-container p:first-child {
         font-size: 60px;
     }
     #skills-list {
@@ -174,7 +174,7 @@ section#projects > .container > h1 {
         align-items: center;
         padding-left: 0;
     }
-    .child-container > h1 {
+    .child-container h1 {
         font-size: 80px;
         letter-spacing: 5rem;
         padding-top: 5rem;
@@ -184,11 +184,11 @@ section#projects > .container > h1 {
     }
 }
 @media screen and (max-width: 596px) {
-    #title-container > p:nth-child(1) {
+    #title-container p:nth-child(1) {
         font-size: 40px;
         line-height: 1.5em;
     }
-    #title-container > p:nth-child(2) {
+    #title-container p:nth-child(2) {
         font-size: 25px;
         line-height: 1.5em;
     }
@@ -199,10 +199,10 @@ section#projects > .container > h1 {
     nav {
         justify-content: flex-end;
     }
-    nav > a:first-child {
+    nav a:first-child {
         display: none;
     }
-    nav > ul {
+    nav ul {
         display: none;
     }
     .container {
