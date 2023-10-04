@@ -24,7 +24,7 @@ li {
     list-style: none;
 }
 /* title page */
-#title-container {
+.title-container {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,12 +32,12 @@ li {
     justify-content: center;
     text-align: center;
 }
-#title-container p:first-of-type {
+.title-container p:first-of-type {
     font-size: 80px;
     line-height: 88px;
     font-weight: bold;
 }
-#title-container p:last-of-type {
+.title-container p:last-of-type {
     font-size: 40px;
     line-height: 60px;
 }
@@ -139,7 +139,7 @@ section#projects .container h1 {
     justify-content: space-between;
     align-items: center;
 }
-#carousel-item {
+.carousel-item {
     height: 300px;
     width: 300px;
     border-radius: 25px;
@@ -149,10 +149,10 @@ section#projects .container h1 {
     align-items: center;
     justify-content: center;
 }
-#carousel-item-description p:nth-child(1) {
+.carousel-item-description p:nth-child(1) {
     font-size: 20px;
 }
-#carousel-item-description p:nth-child(2) {
+.carousel-item-description p:nth-child(2) {
     padding: 25px 0px;
 }
 /* keyframes */
@@ -166,7 +166,7 @@ section#projects .container h1 {
     #title-main-button {
         margin-top: 25px;
     }
-    #title-container p:first-child {
+    .title-container p:first-child {
         font-size: 60px;
     }
     #skills-list {
@@ -184,11 +184,11 @@ section#projects .container h1 {
     }
 }
 @media screen and (max-width: 596px) {
-    #title-container p:nth-child(1) {
+    .title-container p:nth-child(1) {
         font-size: 40px;
         line-height: 1.5em;
     }
-    #title-container p:nth-child(2) {
+    .title-container p:nth-child(2) {
         font-size: 25px;
         line-height: 1.5em;
     }
