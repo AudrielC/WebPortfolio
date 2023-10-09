@@ -102,6 +102,7 @@ nav ul li {
 }
 .container {
     margin: 0 200px;
+    overflow: hidden;
 }
 section#about-me {
     text-align: center;
@@ -111,19 +112,15 @@ section#skills {
     background-color: var(--second-bgcolor);
     color: var(--second-txtcolor);
 }
-.child-container {
-    display: flex;
-    align-items: center;
+.skills-carousel {
+    white-space: nowrap;
+    animation: 5s carousel-slide infinite linear;
 }
-.child-container h1 {
-    writing-mode: vertical-lr;
+.skills-carousel:hover {
+    animation-play-state: paused;
 }
-#skills-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: 50px 0 50px 25px;
+.skills-carousel img {
+    padding: 25px 100px;
 }
 section#projects {
     background-color: var(--second-txtcolor);
@@ -161,6 +158,14 @@ section#projects .container h1 {
         right: 0;
     }
 }
+@keyframes carousel-slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-194%);
+    }
+}
 /* media queries */
 @media screen and (max-width: 940px) {
     #title-main-button {
@@ -174,7 +179,7 @@ section#projects .container h1 {
         align-items: center;
         padding-left: 0;
     }
-    .child-container h1 {
+    .skills-carousel h1 {
         font-size: 80px;
         letter-spacing: 5rem;
         padding-top: 5rem;
