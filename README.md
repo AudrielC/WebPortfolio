@@ -1,2 +1,3 @@
 # WebPortfolio - Portfolio website
-Lacking: Hero Banner, Carousel, Contact Info, Footer
+Lacking/Incomplete: Hero Banner, Carousel, Contact Info, Footer
+Continous logo slide has inconsistent quality depending on screen size
